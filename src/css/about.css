@@ -1,0 +1,119 @@
+/* About Us CSS */
+.sidebar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: auto;
+    min-height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+    overflow: hidden; /* Prevent overflow */
+  }
+  
+  .sidebar:hover {
+    transform: scale(1.05);
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #007bff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .profile-image:hover {
+    border-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .profilename {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 20px;
+    text-transform: capitalize;
+    animation: slideIn 0.8s ease-in-out;
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .links a {
+    margin: 10px 0;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .links a:hover {
+    color: #007bff;
+    text-decoration: underline;
+    transform: translateY(-3px);
+  }
+  
+  p {
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 1.6;
+    animation: fadeIn 1s ease-in-out;
+    font-size:18px;
+  }
+  
+  .aboutusParagraphs {
+    max-width: 80%;
+    margin: auto;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+  
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Ensure container doesn't overflow viewport */
+  html, body {
+    overflow-x: hidden;
+  }
+  

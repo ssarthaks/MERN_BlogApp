@@ -1,0 +1,126 @@
+/* Article Styles */
+.article-container {
+    padding: 20px;
+    max-width: 80%; /* Set max-width to 80% */
+    margin: 0 auto; /* Center content horizontally */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #fff; /* Add background color for visibility */
+}
+
+.article-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.article-content-layout {
+    display: flex;
+    gap: 20px;
+    justify-content: center; 
+    margin-top:50px;
+}
+
+.article-content {
+    flex: 2;
+    max-width: 80%;
+    margin: auto;
+    margin-top:0px;
+}
+
+.article-content p{
+    margin-top:0px;
+}
+
+
+.article-paragraph {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.article-actions {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upvote-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.upvote-button,
+.toggle-form-button,
+.comment-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none; /* Remove underline from links */
+}
+
+.upvote-button:hover,
+.toggle-form-button:hover {
+    border-color: #007bff;
+    transform: scale(1.05);
+}
+
+.comment-button.disabled,
+.upvote-button.disabled {
+    color: #999;
+    border-color: #ddd;
+    cursor: not-allowed;
+}
+
+.upvote-count {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.comment-form-container {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.form-visible {
+    opacity: 1;
+}
+
+.form-hidden {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+/* Horizontal rule style */
+hr {
+    border: none; /* Remove default border */
+    border-top: 1px solid #ddd; /* Light grey color for the horizontal line */
+    margin: 20px 0; /* Add vertical spacing */
+    max-width: 100%; /* Ensure it spans the width of the container */
+}
+
+/* Remove underline from all links */
+a {
+    text-decoration: none; /* Ensure all links have no underline */
+    color: inherit; /* Use inherited color for consistency */
+}
+
+/* Optional: Adjust link hover effects if needed */
+a:hover {
+    color: #007bff; /* Change color on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+}

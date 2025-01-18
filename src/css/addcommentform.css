@@ -1,0 +1,65 @@
+/* AddCommentForm styles */
+.add-comment-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .add-comment-form h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #222;
+    text-align: center;
+  }
+  
+  .add-comment-form label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .add-comment-form input,
+  .add-comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .add-comment-form input:focus,
+  .add-comment-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .add-comment-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .add-comment-form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .add-comment-form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

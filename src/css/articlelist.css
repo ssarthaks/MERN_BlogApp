@@ -1,0 +1,21 @@
+/* ArticlesList Styles */
+.article-list-item {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.articleListWidth {
+    max-width: 80%;
+    margin: auto;
+}
+
+/* Horizontal rule style for ArticlesList */
+.article-list-item hr {
+    border: none;
+    border-top: 2px solid black;
+    margin: 20px 0;
+}
