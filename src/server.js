@@ -4,6 +4,7 @@ import admin from "firebase-admin";
 import path from "path";
 import "dotenv/config";
 import { fileURLToPath } from "url";
+import cors from "cors";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -20,6 +21,13 @@ admin.initializeApp({
 });
 
 const app = express();
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+    methods: ["GET", "POST", "PUT"],
+    credentials: true,
+  })
+);
 
 // Middleware for parsing JSON bodies
 app.use(express.json());
